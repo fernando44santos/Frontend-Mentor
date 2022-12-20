@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+body .body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .text {
+  width: 30vw;
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .text .title {
+  font-family: "inter";
+  font-size: 35px;
+}
+body .text .details {
+  font-family: "lexend";
+  width: 40vw;
+}
+body .text .statics {
+  display: flex;
+  justify-content: space-between;
+  width: 25vw;
+}
+
+/*# sourceMappingURL=style.css.map */
