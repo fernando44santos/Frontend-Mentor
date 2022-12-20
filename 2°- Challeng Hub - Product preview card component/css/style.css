@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-body {
+.body1 {
   width: 100vw;
   height: 165vw;
   border-radius: 10px 10px 0px 0px;
@@ -15,7 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-body .text {
+.body1 .text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -24,45 +24,49 @@ body .text {
   padding-left: 2%;
   padding-right: 2%;
 }
-body img {
+.body1 .imgmobile {
+  display: block;
   border-radius: 10px 10px 0px 0px;
   max-width: 100vw;
   max-height: 50vh;
 }
-body .pvw {
+.body1 .imgdesktop {
+  display: none;
+}
+.body1 .pvw {
   font-family: "Montserrat";
   text-align: left;
   font-size: 14px;
 }
-body .title {
+.body1 .title {
   font-family: "Fraunces";
   font-size: 24px;
   text-align: left;
   color: black;
   font-weight: bold;
 }
-body .paragraph {
+.body1 .paragraph {
   font-size: 14px;
   text-align: left;
   font-family: "Montserrat";
 }
-body .values {
+.body1 .values {
   display: flex;
 }
-body .values .value {
+.body1 .values .value {
   font-size: 24px;
   font-weight: bold;
   font-family: "Fraunces";
   color: hsl(157deg, 35%, 37%);
 }
-body .values .value2 {
+.body1 .values .value2 {
   font-size: 12px;
   padding-left: 8%;
   padding-top: 2%;
   text-decoration: line-through;
   font-family: "Montserrat";
 }
-body .button p {
+.body1 .button p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,8 +78,103 @@ body .button p {
   font-family: "Fraunces";
   font-size: 12px;
 }
-body .button img {
+.body1 .button img {
   padding-right: 2%;
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: 100%;
+    height: 600px;
+    background-color: hsl(30deg, 38%, 92%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .attribution {
+    width: 36vw;
+  }
+  body .body1 {
+    background-color: hsl(0deg, 0%, 100%);
+    width: 38.5vw;
+    height: 28vw;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-around;
+  }
+  body .body1 .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 19.2vw;
+    height: 30vw;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  body .body1 .imgmobile {
+    display: none;
+  }
+  body .body1 .imgdesktop {
+    display: block;
+    border-radius: 10px 0px 0px 10px;
+    width: 18.2vw;
+    height: 30vh;
+  }
+  body .body1 .pvw {
+    font-family: "Montserrat";
+    text-align: left;
+    font-size: 14px;
+  }
+  body .body1 .title {
+    width: 14vw;
+    font-family: "Fraunces";
+    font-size: 24px;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+  }
+  body .body1 .paragraph {
+    width: 18vw;
+    font-size: 14px;
+    text-align: left;
+    font-family: "Montserrat";
+  }
+  body .body1 .values {
+    display: flex;
+  }
+  body .body1 .values .value {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Fraunces";
+    color: hsl(157deg, 35%, 37%);
+  }
+  body .body1 .values .value2 {
+    font-size: 12px;
+    padding-left: 8%;
+    padding-top: 2%;
+    text-decoration: line-through;
+    font-family: "Montserrat";
+  }
+  body .body1 .button p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px/5px;
+    width: 18vw;
+    height: 3vw;
+    background-color: hsl(157deg, 35%, 37%);
+    color: white;
+    font-family: "Fraunces";
+    font-size: 12px;
+  }
+  body .body1 .button img {
+    padding-right: 2%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
