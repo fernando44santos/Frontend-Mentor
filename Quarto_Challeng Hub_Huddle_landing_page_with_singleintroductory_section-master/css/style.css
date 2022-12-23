@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .body {
+  background-color: hsl(257deg, 40%, 49%);
+  background-image: url("../images/bg-mobile.svg");
+  width: 375px;
+  height: 675px;
+  background-size: 375px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body .body .logo {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+}
+body .body .logo img {
+  max-width: 150px;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+body .body .illustration {
+  max-width: 300px;
+}
+body .body .conteudo {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .body .conteudo .title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+body .body .conteudo .details {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+body .body .register {
+  width: 200px;
+  height: 30px;
+  border-radius: 15px/15px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: hsl(257deg, 40%, 49%);
+}
+body .body .icons {
+  width: 300px;
+}
+body .body .icons img {
+  padding-left: 2%;
+}
+
+/*# sourceMappingURL=style.css.map */
