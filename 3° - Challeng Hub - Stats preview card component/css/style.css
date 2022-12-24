@@ -75,7 +75,7 @@ body .body .statics .span {
   body .body {
     display: flex;
     flex-direction: column-reverse;
-    height: 100vh;
+    height: 90vh;
     min-width: 85vw;
   }
   body .body img {
@@ -84,13 +84,24 @@ body .body .statics .span {
     border-radius: 10px 10px 0px 0px;
   }
   body .body .text {
-    height: 60vh;
+    height: 50vh;
     width: 80vw;
     padding-left: 0%;
+    align-items: center;
   }
   body .body .title {
     width: 80vw;
     text-align: center;
+  }
+  body .body .details {
+    width: 76vw;
+    text-align: center;
+  }
+  body .body .statics {
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 18vh;
   }
 }
 
