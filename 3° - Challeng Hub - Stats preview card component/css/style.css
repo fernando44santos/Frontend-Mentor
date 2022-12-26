@@ -19,46 +19,51 @@ body .body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-width: 600px;
   width: 76vw;
-  height: 32vw;
   background-color: hsl(244deg, 38%, 16%);
   border-radius: 10px/10px;
 }
-body .body img {
-  height: 32vw;
-  width: 36vw;
-  filter: drop-shadow(#8080c0);
+body .body .img {
+  background-image: url("../images/image-header-desktop.jpg");
+  min-width: 12.5em;
+  min-height: 10em;
+  height: 34vw;
+  width: 34vw;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 0px 10px 10px 0px;
 }
 body .body .text {
-  width: 36vw;
-  height: 20vw;
+  min-width: 300px;
+  width: 40vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-left: 10%;
   color: white;
+  padding: 5.85em 7em 5.85em 5.85em;
 }
 body .body .title {
   font-family: "inter";
   font-size: 1.8em;
   font-weight: 700;
-  width: 11em;
   height: auto;
+  margin-bottom: 2rem;
 }
 body .body .title span {
   color: hsl(277deg, 64%, 61%);
 }
 body .body .details {
+  height: auto;
+  font-size: 0.85em;
   font-family: "inter";
   font-weight: 400;
-  width: 40vw;
   color: rgb(151, 151, 151);
+  margin-bottom: 3rem;
 }
 body .body .statics {
   display: flex;
   justify-content: space-between;
-  width: 25vw;
+  list-style: none;
 }
 body .body .statics .bold {
   font-weight: bold;
@@ -78,30 +83,40 @@ body .body .statics .span {
     height: 90vh;
     min-width: 85vw;
   }
-  body .body img {
+  body .body .img {
     height: auto;
     min-width: 85vw;
     border-radius: 10px 10px 0px 0px;
   }
   body .body .text {
-    height: 50vh;
-    width: 80vw;
-    padding-left: 0%;
     align-items: center;
   }
   body .body .title {
-    width: 80vw;
     text-align: center;
   }
   body .body .details {
-    width: 76vw;
     text-align: center;
   }
   body .body .statics {
     flex-direction: column;
     align-items: center;
-    width: 80vw;
-    height: 18vh;
+  }
+}
+@media (max-width: 1024px) {
+  body .body .text {
+    padding: 3em 4.5em 3em 3em;
+  }
+  body .body .title {
+    font-size: 1.1em;
+  }
+  body .body .details {
+    font-size: 0.5em;
+  }
+  body .statics .bold {
+    font-size: 1em;
+  }
+  body .statics .span {
+    font-size: 0.4em;
   }
 }
 
