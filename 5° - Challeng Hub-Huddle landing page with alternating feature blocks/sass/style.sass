@@ -5,22 +5,27 @@
     text-align: center
 
 body
+    .logo
+        max-width: 30vw
+        max-height: 2vh
+
     .first
         width: 100%
-        height: 60vh
+        height: 80vh
         display: flex
         flex-direction: column
         align-items: center
+        justify-content: space-between
         background-image: url("../images/bg-hero-mobile.svg")
         background-color: hsl(193, 100%, 96%)
         h1
             font-size: 1.5em
             width: 11em
             margin-top: 2em
-            margin-bottom: 1em
+            
         p
             width:16em
-            margin-bottom: 1em
+          
 
         header
             display: flex
@@ -28,14 +33,60 @@ body
             align-items: center
             width: 100%
             min-height: 15vw
-            img
-                max-width: 30vw
-                max-height: 2vh
+         
             button
                 width: 25vw
                 height: 7vw
                 border-radius: 12px/12px
                 background-color: white
+        img 
+            max-width: 80vw           
+            margin-bottom: 2em
+
+    .button23
+        width: 60vw
+        height: 4vh
+        color: white
+        background-color:  hsl(322, 100%, 66%)
+        border-radius:15px/15px
+        margin-bottom: 1em
+    .cards
+        height:55vh 
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        margin: 4em 0em 4em 0em
+        img
+            max-width: 80vw
+        p
+            width: 16em
+    footer
+        background-color: hsl(192, 100%, 9%)
+        color: white
+        height: 55vh
+        
+        .info
+            height: 50vh
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: space-between
+            margin: 0em 0.5em 0em 0.5em
+            img
+                margin-right: 1em
+            p
+                text-align: justify
+        ul
+            li
+                list-style: none
+                text-align: left
+       
+       
+        
+    
+
+
                 
 
     .attribution 
