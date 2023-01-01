@@ -5,29 +5,15 @@
     text-align: center
 
 body
+    
     .logo
         max-width: 30vw
         max-height: 2vh
 
     .first
-        width: 100%
-        height: 80vh
-        display: flex
-        flex-direction: column
-        align-items: center
-        justify-content: space-between
         background-image: url("../images/bg-hero-mobile.svg")
         background-color: hsl(193, 100%, 96%)
         margin: 0em 0em 2em 0em
-        
-        h1
-            font-size: 1.5em
-            width: 11em
-            margin-top: 2em
-            
-        p
-            width:16em
-          
 
         header
             display: flex
@@ -35,12 +21,32 @@ body
             align-items: center
             width: 100%
             min-height: 15vw
-         
             button
                 width: 25vw
                 height: 7vw
                 border-radius: 12px/12px
                 background-color: white
+
+        .Build
+            width: 100%
+            height: 80vh
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+  
+        .text
+            
+            h1
+                font-size: 1.5em
+                width: 11em
+                margin-top: 2em
+                
+            p
+                width:16em
+            
+
+        
         img 
             max-width: 80vw           
             margin-bottom: 0em
@@ -112,15 +118,35 @@ body
                 list-style: none
                 text-align: left
        
-       
-        
-    
-
-
-                
-
     .attribution 
         font-size: 0.6875em
         text-align: center
         a
             color: hsl(228, 45%, 44%)
+@media (min-width: 800px)
+    body
+        .first
+            header
+                button
+                    width: 15vw
+                    height: 5vh               
+            .Build
+                flex-direction: row
+                justify-content: space-around
+            img
+                max-width: 40vw
+                min-width: 20vw
+            .text
+                display: flex
+                flex-direction: column
+                justify-content: flex-start
+
+                h1
+                    text-align: justify
+                
+                p
+                    width: 32vw
+                    text-align: justify
+
+        .button23
+            width: 20vw

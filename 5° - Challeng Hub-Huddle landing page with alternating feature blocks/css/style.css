@@ -10,23 +10,9 @@ body .logo {
   max-height: 2vh;
 }
 body .first {
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   background-image: url("../images/bg-hero-mobile.svg");
   background-color: hsl(193deg, 100%, 96%);
   margin: 0em 0em 2em 0em;
-}
-body .first h1 {
-  font-size: 1.5em;
-  width: 11em;
-  margin-top: 2em;
-}
-body .first p {
-  width: 16em;
 }
 body .first header {
   display: flex;
@@ -40,6 +26,22 @@ body .first header button {
   height: 7vw;
   border-radius: 12px/12px;
   background-color: white;
+}
+body .first .Build {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body .first .text h1 {
+  font-size: 1.5em;
+  width: 11em;
+  margin-top: 2em;
+}
+body .first .text p {
+  width: 16em;
 }
 body .first img {
   max-width: 80vw;
@@ -118,6 +120,36 @@ body .attribution {
 }
 body .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 800px) {
+  body .first header button {
+    width: 15vw;
+    height: 5vh;
+  }
+  body .first .Build {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body .first img {
+    max-width: 40vw;
+    min-width: 20vw;
+  }
+  body .first .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  body .first .text h1 {
+    text-align: justify;
+  }
+  body .first .text p {
+    width: 32vw;
+    text-align: justify;
+  }
+  body .button23 {
+    width: 20vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
