@@ -123,6 +123,10 @@ body .attribution a {
 }
 
 @media (min-width: 800px) {
+  body .logo {
+    width: 2vw;
+    max-height: 4vh;
+  }
   body .first header button {
     width: 15vw;
     height: 5vh;
@@ -149,6 +153,17 @@ body .attribution a {
   }
   body .button23 {
     width: 20vw;
+  }
+  body .cards {
+    flex-direction: row;
+    width: 90vw;
+  }
+  body .cards img {
+    max-width: 30vw;
+  }
+  body .cards .content {
+    display: flex;
+    flex-direction: column;
   }
 }
 
